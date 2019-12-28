@@ -2,18 +2,22 @@
     <div id="mainContent">
         <p class="title">Colorlib Contact Form</p>
         <p>Contact us for custom quote</p>
-        <input type="text" placeholder="Your name">
-        <input type="text" placeholder="Your Email Address">
-        <input type="text" placeholder="Your Phone Number (optional)">
-        <input type="text" placeholder="Your Web Site (optional)">
+        <input type="text" placeholder="Your name" [(ngModel)]="name" (keyup.enter)="onKeyUp()" />
+        <input type="text" placeholder="Your Email Address" [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+        <input type="text" placeholder="Your Phone Number (optional)" [(ngModel)]="phoneNumber"
+            (keyup.enter)="onKeyUp()" />
+        <input type="text" placeholder="Your Web Site (optional)" [(ngModel)]="website" (keyup.enter)="onKeyUp()" />
 
-        <!--    <input type="text" id="inputtextarea" placeholder="Your Web Site (optional)">
-    
-    <textarea rows="4" cols="50" placeholder="Type you message here..."></textarea>
-    -->
-        <textarea name="" id="inputtextarea" placeholder="Type you message here..."></textarea>
+        <textarea name="" id="inputtextarea" placeholder="Type your message here..." [(ngModel)]="message"
+            (keyup.enter)="onKeyUp()"></textarea>
         <a href="#">
-            <li class="button">Submit</li>
+            <li class="button" (click)="onSubmitClicked()">Submit</li>
         </a>
+    </div>
+
+</div>
+<div class="flex-container">
+    <div id="outputDiv">
+
     </div>
 </div>
