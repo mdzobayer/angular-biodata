@@ -80,3 +80,8 @@ a {
 p {
     margin-left: 4px;
 }
+
+#outputDiv {
+    margin-top: 0px;
+    background-color: #f0faf3;
+}
