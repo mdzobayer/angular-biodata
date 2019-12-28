@@ -3,32 +3,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-personal-data',
-  //templateUrl: './personal-data.component.html',
-  styleUrls: ['./personal-data.component.css'],
-  template: `
-  
-    <div class="flex-container">
-    <div id="mainContent">
-        <p class="title">Colorlib Contact Form</p>
-        <p>Contact us for custom quote</p>
-        <input type="text" placeholder="Your name" [(ngModel)]="name" (keyup.enter)="onKeyUp()" />
-        <input type="text" placeholder="Your Email Address" [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
-        <input type="text" placeholder="Your Phone Number (optional)" [(ngModel)]="phoneNumber" (keyup.enter)="onKeyUp()" />
-        <input type="text" placeholder="Your Web Site (optional)" [(ngModel)]="website" (keyup.enter)="onKeyUp()" />
-
-        <textarea name="" id="inputtextarea" placeholder="Type your message here..." [(ngModel)]="message" (keyup.enter)="onKeyUp()"></textarea>
-        <a href="#">
-            <li class="button" (click)="onSubmitClicked()">Submit</li>
-        </a>
-    </div>
-   
-</div>
- <div class="flex-container">
-      <div id="outputDiv">
-      
-      </div>
-    </div>  
-  `
+  templateUrl: './personal-data.component.html',
+  styleUrls: ['./personal-data.component.css']
 
 })
 export class PersonalDataComponent implements OnInit {
